@@ -14,7 +14,7 @@ document.getElementById('reservation-form').addEventListener('submit', function(
 
     const form = this;
     const formData = new FormData(form);
-    const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'; // Replace with your Google Form ID
+    const googleFormUrl = 'https://forms.gle/W4vJuPzdLGJn4mrQ7'; // Replace with your Form ID
 
     // Disable form fields and make them readonly
     const inputs = form.querySelectorAll('input, select, button');
