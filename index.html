@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gourmet - Fine Dining Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Le Gourmet</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#menu">Menu</a>
+                <a href="#branches">Branches</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Le Gourmet</h1>
+            <p>Experience fine dining like never before</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Our Restaurant</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1517248135467-2c7ed3ab7229" alt="Restaurant Interior">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Dining Area">
+            <img src="https://images.unsplash.com/photo-1578474846511-04ba529f3d32" alt="Chef at Work">
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Signature Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1625937329935-3e4cc86676e5" alt="Truffle Risotto">
+                <h3>Truffle Risotto</h3>
+                <p>Creamy Arborio rice with black truffle and parmesan - $45</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Wagyu Beef">
+                <h3>Wagyu Beef</h3>
+                <p>Premium A5 Wagyu with seasonal vegetables - $85</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1628294895950-98043d1ae1a7" alt="Lobster Thermidor">
+                <h3>Lobster Thermidor</h3>
+                <p>Fresh lobster in a rich cream sauce - $65</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="branches" id="branches">
+        <h2>Our Branches</h2>
+        <div class="branch-grid">
+            <div class="branch-item">
+                <h3>Downtown</h3>
+                <p>123 Gourmet St, City Center</p>
+            </div>
+            <div class="branch-item">
+                <h3>Seaside</h3>
+                <p>456 Ocean Dr, Coastal Town</p>
+            </div>
+            <div class="branch-item">
+                <h3>Uptown</h3>
+                <p>789 Elite Ave, Upper District</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <h2>Make a Reservation</h2>
+        <p class="payment-note">Note: Payment in advance is required for all reservations.</p>
+        <form id="reservation-form">
+            <input type="text" name="entry.1234567890" placeholder="Full Name" required>
+            <input type="tel" name="entry.1111111111" placeholder="Mobile Number" pattern="[0-9]{10}" required title="Please enter a 10-digit mobile number">
+            <input type="date" name="entry.987654321" required>
+            <select name="entry.456789123" required>
+                <option value="">Select Time</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
+            </select>
+            <input type="number" name="entry.321654987" placeholder="Number of Guests" min="1" required>
+            <select name="entry.654321789" required>
+                <option value="">Reservation Type</option>
+                <option value="party">Party</option>
+                <option value="celebration">Celebration</option>
+                <option value="food">Just Food</option>
+            </select>
+            <button type="submit" class="btn">Reserve Now</button>
+        </form>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> info@legourmet.com</p>
+            <p><strong>Address:</strong> 123 Gourmet St, City Center, USA</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Le Gourmet. All Rights Reserved.</p>
+        <p>Designed by xAI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
