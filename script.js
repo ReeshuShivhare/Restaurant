@@ -14,8 +14,7 @@ document.getElementById('reservation-form').addEventListener('submit', function(
 
     const form = this;
     const formData = new FormData(form);
-    const googleFormUrl = 'https://forms.gle/W4vJuPzdLGJn4mrQ7'; // Replace with your Form ID
-
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSduPTnaaL7atBZzfAQr5yvv1rxvFrjGPiORvMC0CW66wLabYA/formResponse';
     // Disable form fields and make them readonly
     const inputs = form.querySelectorAll('input, select, button');
     inputs.forEach(input => {
@@ -30,14 +29,15 @@ document.getElementById('reservation-form').addEventListener('submit', function(
     })
     .then(() => {
         alert('Thank you for your reservation! Payment details will be sent to your mobile number.');
-        // Optionally, keep form readonly or reset it after a delay
-        // form.reset();
-        // inputs.forEach(input => input.removeAttribute('readonly'));
+        form.reset(); // Reset form after successful submission
+        inputs.forEach(input => {
+            input.removeAttribute('readonly');
+            input.disabled = false;
+        });
     })
     .catch(error => {
         console.error('Error submitting form:', error);
         alert('There was an issue submitting your reservation. Please try again.');
-        // Re-enable form on error
         inputs.forEach(input => {
             input.removeAttribute('readonly');
             input.disabled = false;
