@@ -49,3 +49,13 @@ document.getElementById('reservation-form').addEventListener('submit', function(
 window.onload = function() {
     document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
 };
+
+// Smooth scrolling for navigation (already in your file)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
